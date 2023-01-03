@@ -7,11 +7,11 @@ object map_Flatmap_Flatten_Filter {
 
   def main(args: Array[String]) = {
     println(myList.map(x => x * 2))
-    println(myList.map(_ * 2))
+    println(myList.map(_ * 2))    // (x => x * 32) or (_ * 2) both are equal
     println(myList.map(x => x +2))
     println(myList.map(x => "hi" * 2))
     println(myList.map(x => x + "Hi"))
-    println(myMapList.mapValues( x => x + "hi"))
+    println(myMapList.mapValues( x => x + "hi"))  // MapView(<not computed>)
 
     println("Hello".map(_.toUpper))
 
